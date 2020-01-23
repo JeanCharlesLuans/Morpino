@@ -5,7 +5,8 @@ Developpement en C++ du jeu du Morpion.
 Une IA sera capable de jouer sur 3 niveaux de difficultés : 
 * Facile 
 * Moyen 
-* Difficile 
+* Difficile
+
 Le joueur aura également la possiblité de jouer en multijoueur contre un autre joueur.
 
 Regles du Jeu : 
