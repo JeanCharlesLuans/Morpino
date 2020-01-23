@@ -3,4 +3,4 @@ project(Morpino)
 
 set(CMAKE_CXX_STANDARD 17)
 
-add_executable(Morpino main.cpp)
+add_executable(Morpino Source/main.cpp)
