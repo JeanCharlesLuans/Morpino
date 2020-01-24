@@ -9,16 +9,29 @@
 class Pion {
 
 public:
+    /**
+     * Créer un pion avec un type dés sa création
+     * @param newType
+     */
     Pion(char newType);
 
+    /**
+     * Créer un pion avec le type null par default ('\0')
+     */
     Pion();
 
+    /**
+     * @return le charactere qui definit le type du pion
+     */
     char getType();
 
+    /**
+     * @param newType nouveau type du pion
+     */
     void setType(char newType);
 
 private:
-    char type;
+    char type; /** caractere qui definit le type du pion */
 };
 
 

@@ -19,22 +19,30 @@ public :
      */
     Case(int newAxeX, int newAxeY);
 
+    /**
+     * @return la position de la case sur l'axe X
+     */
     int getAxeX();
-    int getAxeY();
-
-    Pion getOccupe();
-
-    void setPion(Pion newPion);
 
     /**
-     * @return les coordonner sous forme d'afficahge de la forme (x,y)
+     * @return la position de la case sur l'axe X
      */
-    std::string toString();
+    int getAxeY();
+
+    /**
+     * @return le pion qui occupe la case
+     */
+    Pion getOccupe();
+
+    /**
+     * @param newPion nouveau pion qui occupe la case
+     */
+    void setPion(Pion newPion);
 
 private:
-    int axeX;
-    int axeY;
-    Pion occupe;
+    int axeX; /** Position sur l'axe X */
+    int axeY; /** Position sur l'axe Y */
+    Pion occupe; /** Pion qui occupe la case */
 };
 
 
