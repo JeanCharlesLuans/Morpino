@@ -1,9 +1,10 @@
 #include <iostream>
+#include "Test/Test.h"
 
 using namespace std;
 
 int main() {
-    cout << "Hello, World!" << endl;
-    cout << "Test de configuration GIT" << endl;
+    cout << "Hello, Morpino!" << endl;
+    testCase();
     return 0;
 }
