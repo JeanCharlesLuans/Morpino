@@ -15,6 +15,8 @@ public:
 
     char getType();
 
+    void setType(char newType);
+
 private:
     char type;
 };

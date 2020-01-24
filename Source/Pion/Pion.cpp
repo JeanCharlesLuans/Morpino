@@ -14,5 +14,9 @@ char Pion::getType() {
 }
 
 Pion::Pion() {
-    type = NULL;
+    type = '\0';
+}
+
+void Pion::setType(char newType) {
+    type = newType;
 }
