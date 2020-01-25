@@ -39,6 +39,13 @@ public :
      */
     void setPion(Pion newPion);
 
+    /**
+     * Verifie si une case est égale a une autre
+     * @param caseATester case a tester
+     * @return  true si les deux case sont les mêmes
+     */
+    bool isSame(Case caseATester);
+
 private:
     int axeX; /** Position sur l'axe X */
     int axeY; /** Position sur l'axe Y */

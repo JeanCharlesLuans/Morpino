@@ -3,7 +3,7 @@
 //
 
 #include "Terrain.h"
-
+#include "errTerrain.h"
 using namespace std;
 
 Terrain::Terrain(int newLongueur, int newHauteur) {
@@ -24,7 +24,17 @@ vector<Case> Terrain::getListeJouer() {
 }
 
 bool Terrain::isJouer(Case aTester) {
-    // TODO parcourir le tableau, verifier une a une les case qui existe puis retourner true si une case existe deja
+    bool isSame = false;
+    for (int i = 0; i < listeJouer.size() && !isSame ; i++) {
+        isSame = listeJouer[i].isSame(aTester);
+    }
+    return isSame;
 }
 
-// TODO finir d'ecrire les methode de terrain
+void Terrain::addCase(Case caseAdd) {
+    if (!isJouer(caseAdd) && caseAdd.getAxeX() <= longueur && caseAdd.getAxeY() <= hauteur) {
+        listeJouer.push_back(caseAdd);
+    } else {
+        throw errTerrain(1, "Impossible d'ajouter la case", 2);
+    }
+}
