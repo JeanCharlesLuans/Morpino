@@ -5,6 +5,7 @@ using namespace std;
 
 int main() {
     cout << "Hello, Morpino!" << endl;
-    testCase();
+    //testCase();
+    testTerrain();
     return 0;
 }
