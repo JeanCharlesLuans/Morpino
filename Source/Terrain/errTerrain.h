@@ -24,7 +24,12 @@ class errTerrain : public exception {
             return m_niveau;
         }
 
-        virtual ~errTerrain() throw() {}
+        int getNumero() const throw() {
+            return m_numero;
+        }
+
+
+    virtual ~errTerrain() throw() {}
 
 private:
     int m_numero;
