@@ -6,5 +6,5 @@
 #define MORPINO_TEST_H
 
 void testCase();
-
+void testTerrain();
 #endif //MORPINO_TEST_H

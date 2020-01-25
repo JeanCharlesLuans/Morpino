@@ -69,4 +69,18 @@ void testTerrain() {
         cerr << "Erreur : " << e.what() << endl;
     }
 
+    cout << "Ajout de la case avec anomalie (taille > taille Terrain) : " << endl;
+    try {
+        terrainTest.addCase(caseHorsTerrain);
+    } catch (std::exception const& e) {
+        cerr << "Erreur : " << e.what() << endl;
+    }
+
+    cout << "Ajout de la case avec anomalie (case deja existante) : " << endl;
+    try {
+        terrainTest.addCase(caseDansTerrain2);
+    } catch (std::exception const& e) {
+        cerr << "Erreur : " << e.what() << endl;
+    }
+
 }

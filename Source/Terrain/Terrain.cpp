@@ -32,9 +32,11 @@ bool Terrain::isJouer(Case aTester) {
 }
 
 void Terrain::addCase(Case caseAdd) {
-    if (!isJouer(caseAdd) && caseAdd.getAxeX() <= longueur && caseAdd.getAxeY() <= hauteur) {
-        listeJouer.push_back(caseAdd);
-    } else {
-        throw errTerrain(1, "Impossible d'ajouter la case", 2);
+    if (isJouer(caseAdd)) {
+        throw errTerrain(2, "Case deja jouer", 2);
     }
+    if (caseAdd.getAxeX() > longueur || caseAdd.getAxeY() > hauteur) {
+        throw errTerrain(1, "Case hors du terrain", 2);
+    }
+    listeJouer.push_back(caseAdd);
 }
