@@ -38,7 +38,7 @@ public:
         bool isJouer(Case aTester);
 
         /**
-         * Ajoute une case a la liste des case jouer
+         * Ajoute une case a la liste des case jouer si cette derniere rentre dans le terrain
          * @param caseAdd case a ajouter
          */
          void addCase(Case caseAdd);

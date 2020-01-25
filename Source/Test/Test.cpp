@@ -4,6 +4,7 @@
 #include "Test.h"
 #include "../Case/Case.h"
 #include <iostream>
+#include "../Terrain/Terrain.h"
 using namespace std;
 
 void testCase() {
@@ -36,4 +37,36 @@ void testCase() {
     cin >> typePion;
     pionDeTest.setType(typePion);
     cout << "Type du pion : " << pionDeTest.getType() << endl;
+}
+
+void testTerrain() {
+
+    int hauteur,
+        longueur;
+
+    cout << "Choisissez une hauteur :" << endl << ">>> ";
+    cin >> hauteur;
+
+    cout << "Choisissez une longueur :" << endl << ">>> ";
+    cin >> longueur;
+
+    cout << "Création du terain en cour ..." << endl;
+    Terrain terrainTest = Terrain(longueur, hauteur);
+
+    cout << "Creation d'une case ne faisant pas partie du terrain :" << endl;
+    Case caseHorsTerrain = Case(longueur+1, hauteur+1);
+
+    cout << "Creation d'une case dans le terrain :" << endl;
+    Case caseDansTerrain = Case(longueur-1, hauteur-1);
+
+    cout << "Creation d'une case ayant les memes coordonner que la case precedente" << endl;
+    Case caseDansTerrain2 = Case(longueur-1, hauteur-1);
+
+    cout << "Ajout de la case sans anomalie : " << endl;
+    try {
+        terrainTest.addCase(caseDansTerrain);
+    } catch (std::exception const& e) {
+        cerr << "Erreur : " << e.what() << endl;
+    }
+
 }

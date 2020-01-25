@@ -29,3 +29,11 @@ Pion Case::getOccupe() {
 void Case::setPion(Pion newPion) {
     occupe = newPion;
 }
+
+bool Case::isSame(Case caseATester) {
+
+    int testAxeX = caseATester.getAxeX();
+    int testAxeY = caseATester.getAxeY();
+
+    return axeX == testAxeX && axeY == testAxeY;
+}
