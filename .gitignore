@@ -1,6 +1,5 @@
 # Default ignored files
 *.exe
 obj/
-Morpino.cbp
 Morpino.depend
 Morpino.layout

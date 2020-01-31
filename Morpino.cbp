@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Morpino" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Morpino" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Morpino" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+			<Add option="-fexceptions" />
+		</Compiler>
+		<Unit filename="Source/Case/Case.cpp" />
+		<Unit filename="Source/Case/Case.h" />
+		<Unit filename="Source/Joueur/Joueur.cpp" />
+		<Unit filename="Source/Joueur/Joueur.h" />
+		<Unit filename="Source/Joueur/Ordinateur.cpp" />
+		<Unit filename="Source/Joueur/Ordinateur.h" />
+		<Unit filename="Source/Pion/Pion.cpp" />
+		<Unit filename="Source/Pion/Pion.h" />
+		<Unit filename="Source/Terrain/Terrain.cpp" />
+		<Unit filename="Source/Terrain/Terrain.h" />
+		<Unit filename="Source/Terrain/errTerrain.h" />
+		<Unit filename="Source/Test/Test.cpp" />
+		<Unit filename="Source/Test/Test.h" />
+		<Unit filename="Source/Utils/Utils.cpp" />
+		<Unit filename="Source/Utils/Utils.h" />
+		<Unit filename="Source/main.cpp" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
