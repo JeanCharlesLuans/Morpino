@@ -1,5 +1,6 @@
 # Default ignored files
-/workspace.xml
-.idea/
-cmake-build-debug/
-.vs/
+*.exe
+obj/
+Morpino.cbp
+Morpino.depend
+Morpino.layout

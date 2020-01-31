@@ -8,4 +8,5 @@
 void testCase();
 void testTerrain();
 void testOrdinateur();
+void testSFML();
 #endif //MORPINO_TEST_H

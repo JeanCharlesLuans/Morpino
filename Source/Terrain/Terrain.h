@@ -22,10 +22,10 @@ public:
      */
      int getLongueur();
 
-     /**
-      * @return la hauteur du terrain
-      */
-      int getHauteur();
+    /**
+     * @return la hauteur du terrain
+     */
+    int getHauteur();
 
       /**
        * @return la liste des case jouer

@@ -5,8 +5,10 @@ using namespace std;
 
 int main() {
     cout << "Hello, Morpino!" << endl;
+
     //testCase();
-    testTerrain();
+    //testTerrain();
+    testSFML();
 	system("PAUSE");
 	return 0;
 }
