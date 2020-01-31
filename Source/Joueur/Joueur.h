@@ -21,7 +21,7 @@ public:
      * Fait jouer un joueur
      * @param l'adresse du terrin actuelle
      */
-     void jouer(Terrain* terrain);
+    virtual void jouer(Terrain* terrain);
 
 // Nom du joueur
     // Défini le type de pion du joueur

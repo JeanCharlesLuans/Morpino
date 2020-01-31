@@ -84,3 +84,5 @@ void testTerrain() {
     }
 
 }
+
+void testOrdinateur() {}

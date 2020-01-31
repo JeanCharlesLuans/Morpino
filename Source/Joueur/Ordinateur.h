@@ -14,8 +14,13 @@ class Ordinateur : public Joueur {
 public:
     explicit Ordinateur(int newDifficulte);
 
+    void jouer(Terrain* terrain) override;
+
 private:
     int difficulte; // Difficulté de l'ordinateur
+    void difficile(Terrain *pTerrain);
+
+    static void facile(Terrain *pTerrain);
 };
 
 

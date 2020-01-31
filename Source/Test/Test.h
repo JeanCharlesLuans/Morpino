@@ -7,4 +7,5 @@
 
 void testCase();
 void testTerrain();
+void testOrdinateur();
 #endif //MORPINO_TEST_H
