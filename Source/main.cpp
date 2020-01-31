@@ -3,11 +3,10 @@
 
 using namespace std;
 
-
-
 int main() {
     cout << "Hello, Morpino!" << endl;
     //testCase();
     testTerrain();
-    return 0;
+	system("PAUSE");
+	return 0;
 }
